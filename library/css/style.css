@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"),
+    url("../fonts/Inter-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Forum";
+  src: url("../fonts/Forum-Regular.woff2") format("woff2"),
+    url("../fonts/Forum-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  padding: 20px 0;
+  color: #ffffff;
+  background: #0c0c0e;
+}
+
+.header-container {
+  align-items: center;
+}
+
+.site-name {
+  margin-right: auto;
+  font-family: 'Forum', serif;
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 400;
+}
+
+.nav {
+  margin-right: 40px;
+}
+
+.menu {
+  gap: 30px;
+}
+
+.menu__item-link {
+  border-bottom: 2px solid transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  transition: border-color 0.3s ease;
+}
+
+.menu__item-link:hover {
+  border-color: #ffffff;
+}
+
+.welcome {
+  width: 1440px;
+  height: 600px;
+  background-image: url("../img/welcome.jpg");
+  background-repeat: no-repeat;
+  background-size: 1440px 600px;
+}
+
+.overlay {
+  width: 1440px;
+  height: 300px;
+  background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%);
+}
+
+.welcome__bg {
+  width: 600px;
+  padding: 35px 40px;
+  background: #0c0c0e;
+}
+
+.welcome__title {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Forum', serif;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
