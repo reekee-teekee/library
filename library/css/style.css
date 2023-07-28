@@ -33,6 +33,7 @@ html {
   box-sizing: inherit;
 }
 
+p,
 h1,
 h2,
 h3,
@@ -50,13 +51,16 @@ img {
   object-fit: cover;
 }
 
+.wrapper {
+  width: 1440px;
+  margin: 0 auto;
+}
+
 .flex {
   display: flex;
 }
 
 .container {
-  width: 1440px;
-  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -101,6 +105,10 @@ img {
   border-color: #ffffff;
 }
 
+.main {
+  background-color: #ffffff;
+}
+
 .welcome {
   width: 1440px;
   height: 600px;
@@ -130,4 +138,74 @@ img {
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+.about,
+.favorites,
+.shop,
+.contacts,
+.card {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.about {
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  font-family: 'Forum', serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-right: -50%;
+  width: 50px;
+  height: 1px;
+  background: #0c0c0e;
+  transform: translate(-50%, -50%)
+}
+
+.about__desc {
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.slider__items {
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.slider__button-list {
+  justify-content: center;
+}
+
+.slider__button {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.slider__button:active {
+  background-color: #bb945f;
+}
+
+.slider__button-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #0c0c0e;
 }
