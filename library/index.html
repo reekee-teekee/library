@@ -38,7 +38,7 @@
           <h2 class="welcome__title">Welcome to&nbsp;the&nbsp;Brooklyn Library</h2>
         </div>
       </section>
-      <section class="about flex">
+      <section class="about container flex">
         <h2 class="title">About</h2>
         <p class="about__desc">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop
           inside </p>
@@ -61,7 +61,72 @@
           </div>
         </div>
       </section>
-      <section class="favorites"></section>
+      <section class="favorites container">
+        <h2 class="title">Favorites</h2>
+        <p class="favorite__text">Pick favorites of season</p>
+        <div class="favorite__seasons flex">
+          <input class="favorite__input" type="radio" id="winter" name="season">
+          <label class="favorite__input-label" for="winter">Winter</label>
+          <input type="radio" id="spring" name="season">
+          <label class="favorite__input-label" for="spring">Spring</label>
+          <input type="radio" id="summer" name="season">
+          <label class="favorite__input-label" for="summer">Summer</label>
+          <input type="radio" id="autumn" name="season">
+          <label class="favorite__input-label" for="autumn">Autumn</label>
+        </div>
+        <div class="season-articles flex">
+          <article class="article">
+            <div class="article__container">
+              <span class="article__staff-picks">Staff Picks</span>
+              <h3 class="article__book-title">The Book Eaters</h3>
+              <span class="article__book-author">By Sunyi Dean</span>
+              <p class="article__book-text">An unusual sci-fi story about a book eater woman who tries desperately to
+                save
+                her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family
+                values,
+                light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart. </p>
+              <button class="article__buy">Buy</button>
+            </div>
+            <img src="./img/books/book1.jpg" alt="Book" class="article__book-cover">
+          </article>
+          <article class="article">
+            <div class="article__container">
+              <span class="article__staff-picks">Staff Picks</span>
+              <h3 class="article__book-title">Cackle</h3>
+              <span class="article__book-author">By Rachel Harrison</span>
+              <p class="article__book-text">Are your Halloween movies of choice The Witches of Eastwick and Practical
+                Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in
+                upstate New York and befriends a beautiful witch.</p>
+              <button class="article__buy">Buy</button>
+            </div>
+            <img src="./img/books/book2.jpg" alt="Book" class="article__book-cover">
+          </article>
+          <article class="article">
+            <div class="article__container">
+              <span class="article__staff-picks">Staff Picks</span>
+              <h3 class="article__book-title">Dante: Poet of the Secular World</h3>
+              <span class="article__book-author">By Erich Auerbach</span>
+              <p class="article__book-text">Auerbach's engaging book places the 'Comedy' within the tradition of epic,
+                tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and
+                his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.
+              </p>
+              <button class="article__buy">Buy</button>
+            </div>
+            <img src="./img/books/book3.jpg" alt="Book" class="article__book-cover">
+          </article>
+          <article class="article">
+            <div class="article__container">
+              <span class="article__staff-picks">Staff Picks</span>
+              <h3 class="article__book-title">The Last Queen</h3>
+              <span class="article__book-author">By Clive Irving</span>
+              <p class="article__book-text">A timely and revelatory new biography of Queen Elizabeth (and her family)
+                exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
+              <button class="article__buy">Buy</button>
+            </div>
+            <img src="./img/books/book4.jpg" alt="Book" class="article__book-cover">
+          </article>
+        </div>
+      </section>
       <section class="shop"></section>
       <section class="contacts"></section>
       <section class="card"></section>

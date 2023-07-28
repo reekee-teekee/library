@@ -163,6 +163,7 @@ img {
   line-height: 40px;
   font-weight: 400;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .title::after {
@@ -209,3 +210,47 @@ img {
   border-radius: 50%;
   background-color: #0c0c0e;
 }
+
+.favorite__text {
+  margin-bottom: 40px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.favorite__seasons {
+  margin-bottom: 40px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+input:checked {
+  font-weight: 700;
+}
+
+.season-articles {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article {
+  width: 590px;
+}
+
+.article__container {
+  width: 550px;
+  border: 1px solid #000000;
+}
+
+.article__staff-picks {}
+
+.article__book-title {}
+
+.article__book-author {}
+
+.article__book-text {}
+
+.article__buy {}
+
+.article__book-cover {}
