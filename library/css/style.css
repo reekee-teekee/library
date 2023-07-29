@@ -33,6 +33,10 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 p,
 h1,
 h2,
@@ -405,4 +409,39 @@ img {
 
 .list-item__price {
   font-family: 'Forum', serif;
+}
+
+.contacts {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.contacts__container {
+  justify-content: space-between;
+}
+
+.contacts__info {
+  flex-direction: column;
+}
+
+.contacts__inquiries-title {
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.contacts__inquiries-tel {
+  margin-bottom: 20px;
+}
+
+.contacts__staff-title {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  font-weight: 700;
+}
+
+.contacts__staff-email {
+  font-weight: 700;
 }
