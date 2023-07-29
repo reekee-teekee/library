@@ -319,3 +319,62 @@ img {
   right: -40px;
   bottom: 0;
 }
+
+.shop {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.shop__intro {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.price {
+  justify-content: space-between;
+}
+
+.price__drinks {}
+
+.price__title {
+  margin-bottom: 40px;
+  font-family: 'Forum', serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #bb945f;
+}
+
+.price__list {
+  flex-direction: column;
+  gap: 40px;
+}
+
+.price__list-item {
+  align-items: center;
+  gap: 60px;
+}
+
+.list-drinks .list-item__name {
+  margin-right: auto;
+}
+
+.list-eat {
+  justify-content: flex-end;
+}
+
+.list-item__line {
+  width: 100px;
+  height: 1px;
+  background-color: #bb945f;
+}
+
+.list-item__price {
+  font-family: 'Forum', serif;
+}
+
+.price__eat {}
