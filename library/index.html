@@ -50,7 +50,7 @@
           </div>
           <div class="slider__button-list flex">
             <div class="slider__button">
-              <div class="slider__button-dot"></div>
+              <div class="slider__button-dot active"></div>
             </div>
             <div class="slider__button">
               <div class="slider__button-dot"></div>
@@ -65,18 +65,46 @@
         <h2 class="title">Favorites</h2>
         <p class="favorite__text">Pick favorites of season</p>
         <div class="favorite__seasons flex">
-          <input class="favorite__input" type="radio" id="winter" name="season">
-          <label class="favorite__input-label" for="winter">Winter</label>
-          <input type="radio" id="spring" name="season">
-          <label class="favorite__input-label" for="spring">Spring</label>
-          <input type="radio" id="summer" name="season">
-          <label class="favorite__input-label" for="summer">Summer</label>
-          <input type="radio" id="autumn" name="season">
-          <label class="favorite__input-label" for="autumn">Autumn</label>
+          <div class="favorite__input-container flex">
+            <input class="favorite__input" type="radio" id="winter" name="season">
+            <label class="favorite__input-label" for="winter">Winter</label>
+          </div>
+          <div class="favorite__input-container flex">
+            <input class="favorite__input" type="radio" id="spring" name="season">
+            <label class="favorite__input-label" for="spring">Spring</label>
+          </div>
+          <div class="favorite__input-container flex">
+            <input class="favorite__input" type="radio" id="summer" name="season">
+            <label class="favorite__input-label" for="summer">Summer</label>
+          </div>
+          <div class="favorite__input-container flex">
+            <input class="favorite__input" type="radio" id="autumn" name="season">
+            <label class="favorite__input-label" for="autumn">Autumn</label>
+          </div>
+          <!-- <label class="favorite__input-label">
+            <input class="favorite__input" type="radio" name="season">
+            <span class="favorite__radio-style"></span>
+            <span class="favorite__radio-text">Winter</span>
+          </label>
+          <label class="favorite__input-label">
+            <input class="favorite__input" type="radio" name="season">
+            <span class="favorite__radio-style"></span>
+            <span class="favorite__radio-text">Spring</span>
+          </label>
+          <label class="favorite__input-label">
+            <input class="favorite__input" type="radio" name="season">
+            <span class="favorite__radio-style"></span>
+            <span class="favorite__radio-text">Summer</span>
+          </label>
+          <label class="favorite__input-label">
+            <input class="favorite__input" type="radio" name="season">
+            <span class="favorite__radio-style"></span>
+            <span class="favorite__radio-text">Autumn</span>
+          </label> -->
         </div>
         <div class="season-articles flex">
-          <article class="article">
-            <div class="article__container">
+          <article class="article flex">
+            <div class="article__container flex">
               <span class="article__staff-picks">Staff Picks</span>
               <h3 class="article__book-title">The Book Eaters</h3>
               <span class="article__book-author">By Sunyi Dean</span>
@@ -87,10 +115,11 @@
                 light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart. </p>
               <button class="article__buy">Buy</button>
             </div>
-            <img src="./img/books/book1.jpg" alt="Book" class="article__book-cover">
+            <div class="article__book-container"><img class="article__book-cover" src="./img/books/book1.jpg"
+                alt="Book"></div>
           </article>
-          <article class="article">
-            <div class="article__container">
+          <article class="article flex">
+            <div class="article__container flex">
               <span class="article__staff-picks">Staff Picks</span>
               <h3 class="article__book-title">Cackle</h3>
               <span class="article__book-author">By Rachel Harrison</span>
@@ -99,10 +128,11 @@
                 upstate New York and befriends a beautiful witch.</p>
               <button class="article__buy">Buy</button>
             </div>
-            <img src="./img/books/book2.jpg" alt="Book" class="article__book-cover">
+            <div class="article__book-container"><img class="article__book-cover" src="./img/books/book2.jpg"
+                alt="Book"></div>
           </article>
-          <article class="article">
-            <div class="article__container">
+          <article class="article flex">
+            <div class="article__container flex">
               <span class="article__staff-picks">Staff Picks</span>
               <h3 class="article__book-title">Dante: Poet of the Secular World</h3>
               <span class="article__book-author">By Erich Auerbach</span>
@@ -112,18 +142,20 @@
               </p>
               <button class="article__buy">Buy</button>
             </div>
-            <img src="./img/books/book3.jpg" alt="Book" class="article__book-cover">
+            <div class="article__book-container"><img class="article__book-cover" src="./img/books/book3.jpg"
+                alt="Book"></div>
           </article>
-          <article class="article">
-            <div class="article__container">
+          <article class="article flex">
+            <div class="article__container flex">
               <span class="article__staff-picks">Staff Picks</span>
               <h3 class="article__book-title">The Last Queen</h3>
               <span class="article__book-author">By Clive Irving</span>
               <p class="article__book-text">A timely and revelatory new biography of Queen Elizabeth (and her family)
                 exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
-              <button class="article__buy">Buy</button>
+              <button class="article__own">Own</button>
             </div>
-            <img src="./img/books/book4.jpg" alt="Book" class="article__book-cover">
+            <div class="article__book-container"><img class="article__book-cover" src="./img/books/book4.jpg"
+                alt="Book"></div>
           </article>
         </div>
       </section>

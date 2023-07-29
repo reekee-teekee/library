@@ -173,8 +173,7 @@ img {
   bottom: 0;
   margin-right: -50%;
   width: 50px;
-  height: 1px;
-  background: #0c0c0e;
+  border-bottom: 1px solid #0c0c0e;
   transform: translate(-50%, -50%)
 }
 
@@ -200,15 +199,15 @@ img {
   cursor: pointer;
 }
 
-.slider__button:active {
-  background-color: #bb945f;
-}
-
 .slider__button-dot {
   width: 16px;
   height: 16px;
   border-radius: 50%;
   background-color: #0c0c0e;
+}
+
+.active {
+  background-color: #bb945f;
 }
 
 .favorite__text {
@@ -219,19 +218,22 @@ img {
 }
 
 .favorite__seasons {
+  gap: 90px;
   margin-bottom: 40px;
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
 
-input:checked {
-  font-weight: 700;
+.favorite__input {
+  margin-right: 20px;
+  accent-color: #000000;
 }
 
 .season-articles {
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 40px;
 }
 
 .article {
@@ -239,18 +241,81 @@ input:checked {
 }
 
 .article__container {
+  flex-direction: column;
+  padding: 15px 0;
+  padding-left: 20px;
   width: 550px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  font-weight: 400;
   border: 1px solid #000000;
 }
 
-.article__staff-picks {}
+.article__staff-picks {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: 'Forum', serif;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
 
-.article__book-title {}
+.article__staff-picks::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  padding-top: 40px;
+  width: 60px;
+  border-bottom: 1px solid #bb945f;
+}
 
-.article__book-author {}
+.article__book-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-.article__book-text {}
+.article__book-author {
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
 
-.article__buy {}
+.article__book-text {
+  margin-bottom: 15px;
+  width: 355px;
+  text-transform: capitalize;
+}
 
-.article__book-cover {}
+.article__buy,
+.article__own {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 9px 27px;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid #0c0c0e;
+  cursor: pointer;
+}
+
+.article__own {
+  color: #bb945f;
+  border-color: #bb945f;
+}
+
+.article__book-container {
+  position: relative;
+}
+
+.article__book-cover {
+  position: absolute;
+  display: block;
+  right: -40px;
+  bottom: 0;
+}
