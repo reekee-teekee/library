@@ -183,6 +183,7 @@ img {
   font-size: 20px;
   line-height: 40px;
   font-weight: 400;
+  text-align: center;
 }
 
 .slider__items {
@@ -225,9 +226,29 @@ img {
   font-weight: 400;
 }
 
+.favorite__input,
+.favorite__input-label {
+  cursor: pointer;
+}
+
 .favorite__input {
   margin-right: 20px;
   accent-color: #000000;
+}
+
+.favorite__input,
+.favorite__input-label {
+  padding: 5px;
+}
+
+.favorite__input:checked+.favorite__input-label {
+  font-weight: 700;
+}
+
+.spring,
+.summer,
+.autumn {
+  display: none;
 }
 
 .season-articles {
@@ -302,6 +323,17 @@ img {
   background-color: transparent;
   border: 1px solid #0c0c0e;
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.article__buy:hover {
+  border-color: #bb945f;
+  background-color: #bb945f;
+  transition: all 0.5s ease;
+}
+
+.article__own:disabled {
+  cursor: default;
 }
 
 .article__own {
@@ -336,8 +368,6 @@ img {
 .price {
   justify-content: space-between;
 }
-
-.price__drinks {}
 
 .price__title {
   margin-bottom: 40px;
@@ -376,5 +406,3 @@ img {
 .list-item__price {
   font-family: 'Forum', serif;
 }
-
-.price__eat {}
