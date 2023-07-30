@@ -231,7 +231,11 @@ img {
 }
 
 .favorite__input,
-.favorite__input-label {
+.favorite__input-label,
+.article__buy,
+.article__own,
+.find-form__check-button,
+.card__get-button {
   cursor: pointer;
 }
 
@@ -326,11 +330,12 @@ img {
   font-weight: 700;
   background-color: transparent;
   border: 1px solid #0c0c0e;
-  cursor: pointer;
   transition: all 0.5s ease;
 }
 
-.article__buy:hover {
+.article__buy:hover,
+.find-form__check-button:hover,
+.card__get-button:hover {
   border-color: #bb945f;
   background-color: #bb945f;
   transition: all 0.5s ease;
@@ -445,4 +450,102 @@ img {
 
 .contacts__staff-email {
   font-weight: 700;
+}
+
+.card__container {
+  justify-content: space-between;
+}
+
+.card__find {
+  width: 600px;
+  text-align: center;
+}
+
+.card__find-title {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.find-form {
+  padding: 20px;
+  border: 3px solid #bb945f;
+  box-shadow: 0px 2px 3px #8e8e8e;
+}
+
+.find-form__bg {
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 20px 20px 0;
+  background: #bb945f;
+}
+
+.find-form__title {
+  margin-bottom: 20px;
+  font-family: 'Forum', serif;
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.find-form__input {
+  margin-bottom: 25px;
+  padding: 8px 20px;
+  font-size: 30px;
+  line-height: 50px;
+  color: #8e8e8e;
+  border-color: transparent;
+  border-radius: 10px;
+}
+
+.find-form__check-button {
+  padding: 10px 40px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid #0c0c0e;
+  transition: all 0.5s ease;
+}
+
+.card__get {
+  width: 456px;
+  text-align: right;
+}
+
+.card__get-title {
+  display: inline-block;
+  margin-bottom: 35px;
+  font-family: 'Forum', serif;
+  font-size: 30px;
+}
+
+.card__get-text {
+  margin-bottom: 35px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.card__get-button {
+  padding: 9px 15px;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid #0c0c0e;
+  border-radius: 2px;
+  transition: all 0.5s ease;
+}
+
+.get-button__container {
+  justify-content: flex-end;
+  gap: 20px;
 }

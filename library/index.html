@@ -397,7 +397,31 @@
           <img class="contacts__map" src="./img/map.jpg" alt="Map">
         </div>
       </section>
-      <section class="card" id="card"></section>
+      <section class="card container" id="card">
+        <h2 class="title">Digital Library Cards</h2>
+        <div class="card__container flex">
+          <div class="card__find">
+            <span class="card__find-title">Find your Library card</span>
+            <form class="find-form" method="post">
+              <div class="find-form__bg flex">
+                <span class="find-form__title">Brooklyn Public Library</span>
+                <input class="find-form__input" id="name" type="text" placeholder="Reader's name">
+                <input class="find-form__input" id="name" type="text" inputmode="numeric" placeholder="Card number">
+              </div>
+              <button class="find-form__check-button">Check the card</button>
+            </form>
+          </div>
+          <div class="card__get">
+            <span class="card__get-title">Get a reader card</span>
+            <p class="card__get-text">You will be able to see a reader card after logging into account or you can
+              register a new account</p>
+            <div class="get-button__container flex">
+              <button class="card__get-button">Sign Up</button>
+              <button class="card__get-button">Log in</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 </body>
