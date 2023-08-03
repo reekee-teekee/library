@@ -1,3 +1,45 @@
+@media (max-width: 1439px) {
+  .slide2 {
+    display: none;
+  }
+
+  .dot4 {
+    display: block;
+  }
+}
+
+@media (max-width: 1259px) {
+  .contacts__container {
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+
+  .contacts__map {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1095px) {
+  .library-card__container {
+    justify-content: center;
+  }
+
+  .library-card__find {
+    margin-bottom: 21px;
+  }
+
+  .library-card__get {
+    width: 600px;
+    text-align: center;
+  }
+
+  .get-button__container {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 1024px) {
 
   .nav {
@@ -36,16 +78,17 @@
     position: relative;
     width: 45px;
     height: 20px;
+    overflow: hidden;
   }
 
   .header__burger.open::before {
     top: 9px;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
   }
 
   .header__burger.open::after {
     bottom: 9px;
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
   }
 
   .header__burger::before,
@@ -78,6 +121,26 @@
   }
 
   .header__burger.open .header__burger-menu {
-    transform: scale(0);
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+  }
+
+  .price {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .price__eat {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 980px) {
+  .slide3 {
+    display: none;
+  }
+
+  .dot5 {
+    display: block;
   }
 }

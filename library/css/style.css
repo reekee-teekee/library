@@ -189,6 +189,7 @@ img {
 
 .slider__items {
   gap: 25px;
+  justify-content: center;
   margin-bottom: 40px;
 }
 
@@ -206,6 +207,11 @@ img {
   height: 16px;
   border-radius: 50%;
   background-color: #0c0c0e;
+}
+
+.dot4,
+.dot5 {
+  display: none;
 }
 
 .active {
@@ -261,8 +267,8 @@ img {
 }
 
 .season-articles {
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -382,6 +388,11 @@ img {
   justify-content: space-between;
 }
 
+.price__drinks,
+.price__eat {
+  max-width: 482px;
+}
+
 .price__title {
   margin-bottom: 40px;
   font-family: 'Forum', serif;
@@ -440,6 +451,7 @@ img {
 
 .contacts__info {
   flex-direction: column;
+  width: 520px;
 }
 
 .contacts__inquiries-title {
@@ -476,6 +488,7 @@ img {
 
 .library-card__container {
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .library-card__find {
