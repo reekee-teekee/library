@@ -110,8 +110,16 @@ img {
   border-color: #ffffff;
 }
 
+.profile-svg {
+  vertical-align: middle;
+}
+
 .main {
   background-color: #ffffff;
+}
+
+.header__burger {
+  display: none;
 }
 
 .welcome {
@@ -259,6 +267,7 @@ img {
 }
 
 .article {
+  margin: 0 auto;
   width: 590px;
 }
 
