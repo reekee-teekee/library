@@ -1,9 +1,26 @@
-const menuBtn = document.querySelector('.header__burger');
-const menu = document.querySelector('.nav');
-const link = document.querySelector('.menu__item-link')
+document.addEventListener('DOMContentLoaded', () => {
 
-menuBtn.addEventListener('click', function () {
-  menuBtn.classList.toggle('open');
-  menu.classList.toggle('open');
-  link.classList.toggle('open');
-});
+  const burger = document.querySelector('.header__burger');
+  const nav = document.querySelector('.nav');
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    nav.classList.toggle('open');
+  })
+
+  window.addEventListener('click', e => {
+    const target = e.target
+    if (!target.closest('.nav') && !target.closest('.header__burger')) {
+      nav.classList.remove('open');
+      burger.classList.remove('open');
+    }
+  })
+
+  nav.addEventListener('click', function (e) {
+    if (e.target.matches('a')) {
+      nav.classList.remove('open');
+      burger.classList.remove('open');
+    }
+  });
+
+})
