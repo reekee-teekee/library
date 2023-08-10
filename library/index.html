@@ -7,6 +7,7 @@
   <link rel="icon" href="./favicon.ico">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
   <title>Brooklyn Public Library</title>
 </head>
 
@@ -25,39 +26,62 @@
           </ul>
         </nav>
         <a href="#" class="profile-link">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="profile-svg" width="28" height="28" viewBox="0 0 28 28" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14ZM18.6667 7.77778C18.6667 10.3551 16.5774 12.4444 14.0001 12.4444C11.4227 12.4444 9.33339 10.3551 9.33339 7.77778C9.33339 5.20045 11.4227 3.11111 14.0001 3.11111C16.5774 3.11111 18.6667 5.20045 18.6667 7.77778ZM19.4998 16.2781C20.9584 17.7367 21.7778 19.715 21.7778 21.7778H14L6.22225 21.7778C6.22225 19.715 7.0417 17.7367 8.50031 16.2781C9.95893 14.8194 11.9372 14 14 14C16.0628 14 18.0411 14.8194 19.4998 16.2781Z"
               fill="white" />
-          </svg></a>
+          </svg>
+        </a>
+        <div class="header__burger">
+          <span class="header__burger-menu"></span>
+        </div>
       </div>
     </header>
     <main class="main">
       <section class="welcome flex">
         <div class="welcome__bg">
-          <p class="welcome__title">Welcome to&nbsp;the&nbsp;Brooklyn Library</p>
+          <h2 class="welcome__title">Welcome to&nbsp;the&nbsp;Brooklyn Library</h2>
         </div>
       </section>
       <section class="about container" id="about">
         <h2 class="title">About</h2>
         <p class="about__desc">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop
           inside </p>
-        <div class="slider">
-          <div class="slider__items flex">
-            <img class="slider__img" src="./img/slider/slide1.jpg" alt="slide1">
-            <img class="slider__img" src="./img/slider/slide2.jpg" alt="slide2">
-            <img class="slider__img" src="./img/slider/slide3.jpg" alt="slide3">
+        <div class="slider flex">
+          <div class="slider__carret-left">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 7.5L9 12.5L15 17.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
-          <div class="slider__button-list flex">
-            <div class="slider__button">
-              <div class="slider__button-dot active"></div>
+          <div class="slider__center-block">
+            <div class="slider__items flex">
+              <img class="slider__img slide1" src="./img/slider/slide1.jpg" alt="slide1">
+              <img class="slider__img slide2" src="./img/slider/slide2.jpg" alt="slide2">
+              <img class="slider__img slide3" src="./img/slider/slide3.jpg" alt="slide3">
             </div>
-            <div class="slider__button">
-              <div class="slider__button-dot"></div>
+            <div class="slider__button-list flex">
+              <div class="slider__button dot1">
+                <div class="slider__button-dot active"></div>
+              </div>
+              <div class="slider__button dot2">
+                <div class="slider__button-dot"></div>
+              </div>
+              <div class="slider__button dot3">
+                <div class="slider__button-dot"></div>
+              </div>
+              <div class="slider__button dot4">
+                <div class="slider__button-dot"></div>
+              </div>
+              <div class="slider__button dot5">
+                <div class="slider__button-dot"></div>
+              </div>
             </div>
-            <div class="slider__button">
-              <div class="slider__button-dot"></div>
-            </div>
+          </div>
+          <div class="slider__carret-right">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 17.5L15 12.5L9 7.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
         </div>
       </section>
@@ -66,7 +90,7 @@
         <p class="favorite__text">Pick favorites of season</p>
         <div class="favorite__seasons flex">
           <div class="favorite__input-container flex">
-            <input class="favorite__input" type="radio" id="winter" name="season">
+            <input class="favorite__input" type="radio" id="winter" name="season" checked>
             <label class="favorite__input-label" for="winter">Winter</label>
           </div>
           <div class="favorite__input-container flex">
@@ -194,7 +218,7 @@
             <div class="article__container flex">
               <span class="article__staff-picks">Staff Picks</span>
               <h3 class="article__book-title">Crude: A Memoir</h3>
-              <span class="article__book-author">By Pablo Fajardo & ​​Sophie Tardy-Joubert</span>
+              <span class="article__book-author">By Pablo Fajardo &amp; ​​Sophie Tardy-Joubert</span>
               <p class="article__book-text">Drawing and color by Damien Roudeau | This book illustrates the struggles of
                 a group of indigenous Ecuadoreans as they try to sue the ChevronTexaco company for damage their oil
                 fields did to the Amazon and her people</p>
@@ -303,12 +327,12 @@
         <p class="coffe-shop__intro">
           In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly
           conversation.
-          you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try
+          You can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try
           desserts from bakery.
         </p>
         <div class="price flex">
           <div class="price__drinks">
-            <div class="price__title">Coffee & Tea</div>
+            <div class="price__title">Coffee &amp; Tea</div>
             <div class="price__list list-drinks flex">
               <div class="price__list-item list-drinks flex">
                 <span class="list-item__name">Cold Brew Coffee</span>
@@ -343,7 +367,7 @@
             </div>
           </div>
           <div class="price__eat">
-            <div class="price__title">Desserts & Cakes</div>
+            <div class="price__title">Desserts &amp; Cakes</div>
             <div class="price__list flex">
               <div class="price__list-item list-eat flex">
                 <span class="list-item__name">Forest Gateau</span>
@@ -476,6 +500,8 @@
       </div>
     </footer>
   </div>
+  <script src="./js/script.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
