@@ -139,14 +139,49 @@
     transition: all 0.3s ease;
   }
 
+  .about {
+    padding-bottom: 35px;
+  }
+
+  .favorites {
+    padding-bottom: 61px;
+  }
+
   .price {
     flex-direction: column;
     gap: 40px;
   }
 
+  .price__drinks {
+    width: 442px;
+  }
+
   .price__eat {
     align-self: flex-end;
   }
+
+  .library-card__get {
+    padding-top: 7px;
+  }
+
+  .library-card__get-text {
+    padding: 0 5px 5px;
+  }
+}
+
+@media (max-width: 770px) {
+  .footer__bottom {
+    justify-content: normal;
+  }
+
+  .footer__bottom-year {
+    margin-right: auto;
+  }
+
+  .footer__bottom-rs {
+    margin-right: 23px;
+  }
+
 }
 
 @media (max-width: 730px) {

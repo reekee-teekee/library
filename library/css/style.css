@@ -204,6 +204,7 @@ img {
 .slider__carret-left,
 .slider__carret-right {
   display: none;
+  margin-bottom: 25px;
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -291,6 +292,7 @@ img {
 .article {
   margin: 0 auto;
   width: 590px;
+  height: 555px;
 }
 
 .article__container {
@@ -398,6 +400,7 @@ img {
 .coffe-shop__intro {
   margin-bottom: 40px;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 .price {
@@ -478,6 +481,7 @@ img {
 .contacts__link {
   color: #000000;
   border-bottom: 1px dashed transparent;
+  font-weight: 800;
   transition: border-bottom 0.3s ease;
 }
 
@@ -565,7 +569,7 @@ img {
 }
 
 .library-card {
-  margin-bottom: 47px;
+  margin-bottom: 42px;
 }
 
 .library-card__get {
