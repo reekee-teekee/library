@@ -120,6 +120,7 @@ img {
 
 .header__burger {
   display: none;
+  cursor: pointer;
 }
 
 .welcome {
