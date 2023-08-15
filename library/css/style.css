@@ -298,7 +298,7 @@ img {
 }
 
 .favorite__input:checked+.favorite__custom-input+.favorite__input-label {
-  -webkit-text-stroke: 1px #000000;
+  text-shadow: 0 0 1px #000000, 0 0 1px #000000;
 }
 
 .spring,
