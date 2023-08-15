@@ -248,15 +248,18 @@ img {
 }
 
 .favorite__seasons {
-  gap: 85px;
+  gap: 81px;
   margin-bottom: 34px;
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
 
-.favorite__input,
-.favorite__input-label,
+.favorite__input-container {
+  align-items: center;
+}
+
+.favorite__input-container,
 .article__buy,
 .article__own,
 .find-form__check-button,
@@ -265,17 +268,37 @@ img {
 }
 
 .favorite__input {
-  margin-right: 20px;
-  accent-color: #000000;
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
 }
 
-.favorite__input,
-.favorite__input-label {
+.favorite__input-container {
   padding: 5px;
 }
 
-.favorite__input:checked+.favorite__input-label {
-  font-weight: 700;
+.favorite__custom-input {
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.favorite__input:checked+.favorite__custom-input::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.favorite__input:checked+.favorite__custom-input+.favorite__input-label {
+  -webkit-text-stroke: 1px #000000;
 }
 
 .spring,
