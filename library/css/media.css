@@ -60,6 +60,10 @@
 
 @media (max-width: 1024px) {
 
+  .drop-menu {
+    right: 105px;
+  }
+
   .nav {
     position: absolute;
     top: -100%;

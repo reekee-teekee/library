@@ -42,7 +42,8 @@ p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin: 0;
 }
 
@@ -112,6 +113,54 @@ img {
 
 .profile-svg {
   vertical-align: middle;
+}
+
+.drop-menu {
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 16px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.drop-menu.open-menu {
+  display: flex;
+}
+
+.drop-menu__title {
+  position: relative;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.drop-menu__title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  /* margin-right: -50%; */
+  width: 40px;
+  height: 1px;
+  border-bottom: 1px solid #bb945f;
+  transform: translate(-50%, -50%);
+
+}
+
+.drop-menu_link {
+  color: #000000;
+}
+
+.drop-menu__with-auth {
+  display: none;
 }
 
 .main {
