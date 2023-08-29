@@ -65,9 +65,9 @@
   }
 
   .nav {
-    position: absolute;
-    top: -100%;
-    right: 0;
+    position: fixed;
+    top: 0;
+    right: -100%;
     margin-right: 0;
     width: 332px;
     background-color: #0c0c0e;
@@ -75,7 +75,7 @@
   }
 
   .nav.open {
-    top: 0;
+    right: 0;
     transition: all 0.5s ease;
   }
 
